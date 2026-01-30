@@ -1,0 +1,120 @@
+body {
+    font-family: Verdana;
+    background-color: #f0f8ff;
+    text-align: center;
+    color: black;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 20px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.flex1 {
+    flex: 1;
+}
+
+.flex2 {
+    flex: 2;
+}
+
+.flex3 {
+    flex: 3;
+}
+
+.flex4 {
+    flex: 4;
+}
+
+.flex5 {
+    flex: 5;
+}
+
+.flex6 {
+    flex: 6;
+}
+
+.flex7 {
+    flex: 7;
+}
+
+.flex8 {
+    flex: 8;
+}
+
+.centrado {
+    text-align: center;
+}
+
+img.opcion {
+    cursor: pointer;
+    width: 150px;
+    transition: transform 0.2s ease;
+    
+    
+}
+
+img.opcion:hover {
+    transform: scale(1.2);
+}
+
+#imgJugador,
+#imgCPU {
+    width: 250px;
+    height: 250px;
+    transition: transform 0.3s ease;
+    border-radius: 20px;
+    overflow: hidden;
+    border: 3px solid black;
+    object-fit: cover;
+}
+
+#outResultado {
+    font-size: 1.5em;
+    font-weight: bold;
+    transition: color 0.3s ease, opacity 0.3s ease;
+}
+
+button {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+p {
+    margin-bottom: 1.2rem;
+    text-align: center;
+}
+.button{
+    color: white;
+    background-color: blue;
+    padding: 8px 20px;
+    margin: 5px;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+    font: caption;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.button:hover {
+    background-color: #3f9fff;
+}
+
+
+
+
+
+
+
+
+
+

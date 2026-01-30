@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Juego Piedra, Papel, Tijera</title>
+    <script src="js/funciones.js"></script>
+
+</head>
+
+<body>
+
+    <img src="imagenes/titulo.jpg" alt="piedra, papel, tijera" width="700" height="250">
+    
+    <div class="flex-container" id="resultados">
+
+        <div class="centrado">
+            <p>Jugador</p>
+            <br>
+            <img id="imgJugador" src="imagenes/piedra.jpg" alt="Jugador">
+        </div>
+
+        <div class="centrado">
+            <p>CPU</p>
+            <br>
+            <img id="imgCPU" src="imagenes/tijera.jpg" alt="CPU">
+        </div>
+    </div>
+
+    <output id="outResultado">Elige tu jugada</output>
+
+    <div class="flex-container">
+        <div class="flex2-centrado" id="eleccion">
+
+            <h3>Selecciona tirada</h3>
+            <img src="imagenes/piedra.jpg" alt="piedra" onclick="tirada('piedra')" class="opcion">
+            <img src="imagenes/papel.jpg" alt="papel" onclick="tirada('papel')" class="opcion">
+            <img src="imagenes/tijera.jpg" alt="tijera" onclick="tirada('tijera')" class="opcion">
+        </div>
+
+        <div class="flex3-centrado" id="estadisticas">
+            <br>
+            <br>
+            <h3>Estadisticas</h3>
+            <p>Partidas: <span id="inPartidas">0</span></p>
+            <p>Ganadas: <span id="inGanadas">0</span></p>
+            <p>Perdidas: <span id="inPerdidas">0</span></p>
+            <p>Empates: <span id="inEmpatadas">0</span></p>
+            <br>
+            <button class="button" onclick="reinicia()">Reiniciar Partida</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
